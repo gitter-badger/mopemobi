@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/add_icon.png</file>
+        <file>icons/add_icon_pressed.png</file>
+        <file>icons/back_icon.png</file>
+        <file>icons/delete_icon.png</file>
+        <file>icons/delete_icon_pressed.png</file>
+        <file>icons/reload_icon.png</file>
+        <file>icons/reload_icon_pressed.png</file>
+        <file>icons/share_icon.png</file>
+        <file>icons/share_icon_pressed.png</file>
+        <file>icons/HomeIcon.png</file>
+        <file>icons/HomeIcon-Focus.png</file>
+        <file>icons/GIFTS.png</file>
+        <file>icons/GROUP.png</file>
+        <file>icons/settings.png</file>
+        <file>icons/user1.jpeg</file>
+    </qresource>
+</RCC>

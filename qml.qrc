@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/common/Ad.qml</file>
+        <file>qml/common/Button.qml</file>
+        <file>qml/common/CheckBox.qml</file>
+        <file>qml/common/ErrorInfo.qml</file>
+        <file>qml/common/Home.qml</file>
+        <file>qml/common/ImageButton.qml</file>
+        <file>qml/common/LoadingInfo.qml</file>
+        <file>qml/common/Login.qml</file>
+        <file>qml/common/main.qml</file>
+        <file>qml/common/TextInputField.qml</file>
+        <file>qml/common/TextNameInputField.qml</file>
+        <file>qml/common/Trending.qml</file>
+        <file>qml/common/MarText.qml</file>
+        <file>qml/common/Storage.js</file>
+        <file>qml/common/MarToolbar.qml</file>
+        <file>qml/common/MainView.qml</file>
+        <file>qml/common/BusinessModulesView.qml</file>
+        <file>qml/common/ChatView.qml</file>
+        <file>qml/common/JsonListModel.qml</file>
+        <file>qml/common/ChatItem.qml</file>
+        <file>qml/business/ShopHome.qml</file>
+        <file>qml/business/BusinessMenu.qml</file>
+        <file>qml/business/CinemaView.qml</file>
+        <file>qml/business/RestaurantView.qml</file>
+        <file>qml/business/HotelView.qml</file>
+        <file>qml/business/EntertainmentView.qml</file>
+        <file>qml/common/TopBar.qml</file>
+        <file>qml/common/CommentsView.qml</file>
+        <file>qml/common/GridMenuItem.qml</file>
+        <file>qml/common/Ticker.qml</file>
+        <file>qml/business/BusinessTemplate.qml</file>
+        <file>qml/business/ShopList.qml</file>
+        <file>qml/business/Header.qml</file>
+        <file>qml/business/Footer.qml</file>
+        <file>qml/business/ListBody.qml</file>
+        <file>qml/business/BusinessChatWindow.qml</file>
+    </qresource>
+</RCC>
