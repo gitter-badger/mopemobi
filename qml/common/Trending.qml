@@ -53,7 +53,10 @@ Item {
     {
         if (name !== "")
         {
-            app.addStatus(name, null)
+            var status = {};
+            status.isTrending = "true"
+            status.status = name;
+            app.addStatus(status)
             textinput.text = "";
         }
     }

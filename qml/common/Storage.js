@@ -330,16 +330,20 @@ function addItem(name, itemId)
     }
 }
 
-function addStatus(name, itemId)
+function addStatus(status)
 {
-    console.log('Create item '+name)
+
     var locId = "local_" + (new Date().getTime());
-    var processing = itemId ? false : true
+    status.itemProcessing = status.itemId ? false : true
+    status.itemId = locId;
+    status.like = false;
     // Add item locally
-    statusModel.insert(0, { "itemId": locId, "status": name, "itemDone": false, "itemProcessing": processing, "like": false})
+    statusModel.insert(0, status)
     firstDoneIndex++;
+
     // if itemId not provided sync to backend
-    if(!itemId){
+    if(status.itemId){
+        console.log('Create item '+JSON.stringify(status))
         // Send info to the server
         var doc = new XMLHttpRequest();
         doc.open("POST", REQUEST_URL + "/api/status", true);
@@ -372,7 +376,7 @@ function addStatus(name, itemId)
             }
         }
 
-        doc.send(JSON.stringify({ "itemId": locId, "status": name, "itemDone": false, "itemProcessing": processing, "like": false}));
+        doc.send(JSON.stringify(status));
     }
 }
 

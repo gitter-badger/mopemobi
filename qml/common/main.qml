@@ -128,9 +128,9 @@ ApplicationWindow {
     }
 
     // Add new status to the model
-    function addStatus(name, itemId)
+    function addStatus(status)
     {
-        Storage.addStatus(name, itemId);
+        Storage.addStatus(status);
     }
 
     // Refresh status model

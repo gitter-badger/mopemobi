@@ -3,12 +3,18 @@ import "../common" as COMMON
 
 ListView {
     id: listview
+
+    signal clicked()
+
     delegate:  Item {
         id: container
         width: parent.width
         height: listview.height*0.08
 
         signal clicked
+        onClicked:  {
+            listview.clicked()
+        }
 
         transformOrigin: Item.Right
 
@@ -22,10 +28,10 @@ ListView {
             id: textitem
             color: "#4D4D4D"
             font.pixelSize: Math.min(parent.width*0.1, parent.height*0.4)
-            text: "The Bistro"
+            text: name
             anchors.verticalCenter: parent.verticalCenter
             anchors.left: parent.left
-            anchors.leftMargin: 30
+            anchors.leftMargin: parent.width*0.08
         }
 
         Rectangle {

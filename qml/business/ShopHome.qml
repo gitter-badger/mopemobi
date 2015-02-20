@@ -4,10 +4,13 @@ import "." as DIR
 
 
 StackView {
+    id: shopview
     width: parent.width
     height: parent.height
     x: parent.width
     objectName: "Shops"
+
+    property var selected
 
     initialItem: DIR.ShopList {
 

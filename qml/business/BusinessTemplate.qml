@@ -20,13 +20,8 @@ Rectangle {
     DIR.ListBody {
         id: listview
         anchors.top: header.bottom
-        anchors.topMargin: settings.fontL
+        anchors.topMargin: settings.fontL*2
         anchors.bottom: footer.top
-        model: 10
-    }
-
-    DIR.BusinessChatWindow {
-        id: businesschatwindow
     }
 
 

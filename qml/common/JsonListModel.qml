@@ -5,6 +5,8 @@ ListModel {
     id: root
 
     property string source
+    property var xmldata
+    signal dataReady(var res)
 
     function httpRequest(method, url) {
         var response;
@@ -17,7 +19,7 @@ ListModel {
                                response = doc.responseText;
                                 console.log(response);
                                var res = JSON.parse(response);
-
+                               xmldata = res;
                                root.append(res)
                            }
                        }
